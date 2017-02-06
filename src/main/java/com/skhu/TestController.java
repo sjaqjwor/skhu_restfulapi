@@ -16,6 +16,8 @@ public class TestController {
     StudentRepository Student;
     @RequestMapping("/")
     public @ResponseBody List<Student> test(){
+        System.out.print("ggg");
         return Student.findAll();
+
     }
 }
